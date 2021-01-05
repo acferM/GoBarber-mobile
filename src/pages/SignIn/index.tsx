@@ -94,7 +94,7 @@ const SignIn: React.FC = () => {
       >
         <ScrollView
           keyboardShouldPersistTaps="handled"
-          // contentContainerStyle={{ flex: 1 }}
+          contentContainerStyle={{ flex: 1 }}
         >
           <Container>
             <Image source={logoImg} />
@@ -113,7 +113,7 @@ const SignIn: React.FC = () => {
                 key="none"
                 name="email"
                 icon="mail"
-                placeholder="Email"
+                placeholder="E-mail"
                 returnKeyType="next"
                 onSubmitEditing={() => {
                   passwordInputRef.current?.focus();
@@ -123,7 +123,7 @@ const SignIn: React.FC = () => {
                 ref={passwordInputRef}
                 name="password"
                 icon="lock"
-                placeholder="Password"
+                placeholder="Senha"
                 secureTextEntry
                 returnKeyType="send"
                 onSubmitEditing={formRef.current?.submitForm}
